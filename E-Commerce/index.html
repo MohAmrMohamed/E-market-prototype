@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shop</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="https://clipground.com/images/shopping-cart-symbol-clipart-5.png" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+        <div id="logoArea">
+            <div id="cartSection">
+                <!-- Cart button -->
+                <div id="cart">
+                🛒
+                <span id="cartSize">0</span>
+                </div>
+                <!-- Cart dropdown -->
+                <div id="cartUI" style="display: none;">    
+            </div>
+
+                <div id="cartUI">
+                    <h4>Cart:</h4>
+                    <p>Total: </p>
+                    <button class="cardBtn">Buy now</button>
+                    
+                </div>
+            </div>
+            <h3 class="title">Store</h3>
+        </div>
+        <nav>
+
+            <div id='filterSection'>
+                <p class="filtertext">Price range: </p>
+                <input id="minPrice" placeholder="Min"></input><input id="maxPrice" placeholder="Max"></input>
+                <button id="filterBtn">Filter</button>
+            </div>
+            <div class="flex"><input id='search' placeholder="Tomato"></input>
+                <button id="searchBtn">Search</button>
+            </div>
+            <div  class="flex"><p class="filtertext">Sort by: </p>
+                <select id="dropdown">
+                    <option selected>Default</option>
+                    <option>Alphabetically</option>
+                    <option>Reverse Alphabetically</option>
+                    <option>Price: Lowest to Highest</option>
+                    <option>Price: Highest to Lowest</option>
+                </select></div>
+            
+        </nav>
+    </header>
+    <main id="main">  
+        <div id="carousel">
+            <button id="carouselL"><p>&lt;</p></button>
+            <button id="carouselR"><p>&gt;</p></button>
+            <img class='carouselImg' src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg1.10bestmedia.com%2FImages%2FPhotos%2F385821%2FThe-Fresh-Market_54_990x660.jpg&f=1&nofb=1&ipt=8b917de2d61502c5042383b5b5dde5bfab5edf7fefa050f7edd8a410239b659b&ipo=images">
+            <img class='carouselImg' src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1583258292688-d0213dc5a3a8%3Fcrop%3Dentropy%26cs%3Dtinysrgb%26fit%3Dmax%26fm%3Djpg%26ixid%3DMnwxMjA3fDB8MXxzZWFyY2h8Mnx8c3VwZXJtYXJrZXRzfHwwfHx8fDE2Mjg3MzkzMTA%26ixlib%3Drb-1.2.1%26q%3D80%26w%3D1080&f=1&nofb=1&ipt=07f61576779eb73fd3f0113117adc14b323dd99f5afb6a3695a11d8f5de39bf0&ipo=images">
+            <img class='carouselImg' src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.scrapehero.com%2Fwp%2Fwp-content%2Fuploads%2F2020%2F12%2Flargest-supermarkets-in-uk-scaled.jpg&f=1&nofb=1&ipt=a2b6328ff0681df7a712b8e6bd4e4e3c83ba4b651695395e8f5e8144cbdd2555&ipo=images">
+        </div>
+        <h1 class="title">Products: </h1>    
+        <div id="cards">
+        </div>
+        <div id="paginationControls">
+            
+        </div>
+    </main>
+    <footer id="footer" class="center">
+        <div class="logoCenter">
+            <img src="https://clipground.com/images/shopping-cart-symbol-clipart-5.png" class="logo"></button>
+            <h3 class="title">Store</h3>
+        </div>
+        <a target="_blank" href="https://google.com">Terms and conditions</a>
+        <a target="_blank" href="https://google.com">Legal</a>
+        <div class="socials">
+            <a target="_blank" href="https://facebook.com" class="social"><img class='socialImg'src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/512px-2021_Facebook_icon.svg.png?20220821121039"></a>
+            <a target="_blank" href="https://instagram.com" class="social"><img class='socialImg'src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"></a>
+        </div>
+    </footer>
+	<script src="shop.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

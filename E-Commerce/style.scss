@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+h1, h2, h3, h4 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    margin-top: 0;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Ensure space between logo and nav */
+    align-items: center; /* Center items vertically */
+    border-bottom: 1px solid black;
+    background-color: antiquewhite;
+    padding: 10px 20px; /* Add padding for spacing */
+}
+
+main {
+    padding-top: 40px;
+}
+.logo {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+#logoArea {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Center items vertically */
+    gap: 30px;
+}
+
+.title {
+    margin-left: 10px; /* Adjust for some spacing */
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+nav > a {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+}
+a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+a:hover {
+    transform: translateY(-2px);
+    color: gray;
+}
+
+
+
+#cart {
+    position: relative;
+    background-color: gray;
+    padding: 8px;
+    border-radius: 50%;
+    color: none;
+    border: 1px solid black;
+}
+#cart:hover{
+    background-color: rgba(128, 128, 128, 0.479);
+    transform: translateY(-2px);
+}
+label {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 100%;
+}
+#search{
+    padding: 5px;
+    border-radius: 10px;
+    color: none;
+    border: 1px solid black;
+}
+#search:hover{
+    background-color: rgba(0, 0, 0, 0.096);
+    transform: translateY(-2px)
+}
+#searchBtn {
+    padding: 5px;
+    border-radius: 10px;
+    color: none;
+    border: 1px solid black;
+    background-color: greenyellow;
+}
+#searchBtn:hover{
+    background-color: rgba(5, 150, 15, 0.479);
+    transform: translateY(-2px);
+}
+.center {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+.logoCenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 30px;
+    margin: auto;
+    flex: 1;
+    max-width: 100%;
+}
+.social {
+    max-width: 50px;
+    max-height: 50px;
+}
+.socialImg {
+    max-width: 25px;
+    max-height: 25px;
+}
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 30px;
+    margin: auto;
+    flex: 1;
+    max-width: 100%;
+    margin-top: 30px;
+}
+footer {
+    text-align: center;
+    background-color: rgb(223, 211, 211);
+    border-top: 10px solid black;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    height: 30vh;
+    margin-top: 50px;
+}
+footer > a {
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    
+}
+
+
+#carousel {
+    position: relative;
+}
+.carouselImg {
+    display: none;
+    width: 100%; /* Set a fixed width for the images */
+    height: 600px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure the entire image is visible */
+    display: block; /* Make the images behave as block elements */
+    margin: auto; /* Center the images horizontally */
+}
+#carouselL {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100px;
+    background-color: rgba(128, 128, 128, 0.635);
+    border: 1px solid black;
+    border-left: none;
+    font-size: 6em;
+    color: rgb(190, 189, 189);
+}
+#carouselR {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 100px;
+    background-color: rgba(128, 128, 128, 0.635);
+    border: 1px solid black;
+    border-right: none;
+    font-size: 6em;
+    color: rgb(190, 189, 189);
+}
+
+
+.card {
+    
+    background-color: rgba(114, 125, 142, 0.479);
+    border: 1px solid black;
+    padding: 20px 20px 20px 20px;
+    width: 350px;
+    margin: 0 10px;
+    border-radius: 30px;
+}
+.cardImg {
+    width: 300px;
+    margin: 5px;
+    border-radius: 15px;
+}
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    place-items: center;
+    align-content: center;
+}
+.card:hover {
+    transform: translateY(-2px);
+}
+.cardBtn {
+    padding: 5px;
+    border-radius: 10px;
+    color: none;
+    border: 1px solid black;
+    background-color: aqua;
+}
+.cardBtn:hover {
+    background-color: gray;
+    transform: translateY(-2px)
+}
+.card > p {
+    padding-top: 5px;
+    font-style: italic;
+}
+#cartSection {
+    position:relative;
+}
+#cartUI {
+    display:none;
+    position: absolute;
+    background-color: azure;
+    padding: 20px;
+    min-width: 200px;
+    border-radius: 30px;
+    border: 1px solid black;
+    top: 110%
+}
+#filterSection > input {
+    width: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: aliceblue;
+}
+#filterBtn {
+    padding: 5px;
+    border-radius: 10px;
+    color: none;
+    border: 1px solid black;
+    background-color: greenyellow;
+}
+#filterBtn:hover{
+    background-color: rgba(5, 150, 15, 0.479);
+    transform: translateY(-2px);
+}
+#filterSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 25px;
+}
+.filtertext {
+    font-size: 1.3em;
+    margin: auto 0;
+}
+#dropdown {
+    border-radius:  15px;
+    padding: 10px;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+option {
+    border-radius:  15px;
+    padding: 10px;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+#paginationControls {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    place-items: center;
+    align-content: center;
+}
+#paginationBtn {
+    margin: 0;
+}
+#clearBtn {
+    padding: 5px;
+    border-radius: 10px;
+    color: none;
+    border: 1px solid black;
+    background-color: goldenrod;
+}
+#clearBtn:hover {
+    background-color: gray;
+    transform: translateY(-2px)
+}
+
+/* Media Query for Responsive Design */
+
+
+/* Adjust navigation for large screens */
+@media (max-width: 1400px) {
+    nav {
+        margin-left: 5px; /* Use auto for flexible alignment */
+    }
+    #search {
+        width: 100px;
+    }
+    .filtertext {
+        font-size: 1em;
+    }
+    nav > a {
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 1150px) {
+    #search {
+        width: 100px;
+    }
+    .filtertext {
+        font-size: 0.9em;
+    }
+    nav > a {
+        font-size: 1em;
+        font-weight: bold;
+    }
+    header {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    #logoArea, nav {
+        width: 100%; /* Ensure full width */
+        justify-content: space-around; /* Distribute space evenly */
+        margin-left: 0; /* Reset margin */
+    }
+    nav {
+        gap:0;
+    }
+    #dropdown  {
+        width: 50px
+    }
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    #logoArea, nav {
+        width: 100%; /* Ensure full width */
+        justify-content: space-around; /* Distribute space evenly */
+        margin-left: 0; /* Reset margin */
+    }
+
+    nav > a {
+        font-size: 1.2em; /* Adjust font size if needed */
+    }
+    nav {
+        gap: 10px;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start;
+    }
+    main {
+        padding-top: 150px;
+    }
+    .flex {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: space-around;
+        
+    }
+}
+
+.paginationBtn {
+    padding: 5px;
+    border-radius: 10px;
+    color: none;
+    border: 1px solid black;
+    background-color: none;
+    
+}
